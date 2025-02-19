@@ -1,0 +1,33 @@
+------outputing-------
+pout
+------outputing-------
+
+---------init---------
+pinit
+---------init---------
+
+------makepixel-------
+pmp
+------makepixel-------
+
+---------halt---------
+phalt
+---------halt---------
+
+
+load 0 600
+load 1 600
+load 2 300
+load 3 300
+load 4 0
+load 5 0
+load 6 255
+load 7 1
+
+init 0 1
+-------code------
+
+-------code------
+jic 3 0 34 0
+jmp 28
+loop
