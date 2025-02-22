@@ -6,10 +6,10 @@ class ram:
             self.data.append(0)
 
     def write(self, postiion, info):
-        self.data[postiion] = info
+        self.data[int(postiion)] = info
     
     def read(self, postion):
-        return self.data[postion]
+        return self.data[int(postion)]
     
     def switch(self, pos1, pos2):
         temp = self.data[pos1]

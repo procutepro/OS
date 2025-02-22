@@ -10,24 +10,31 @@ pinit
 pmp
 ------makepixel-------
 
+------makerects-------
+pmr
+------makerects-------
+
 ---------halt---------
 phalt
 ---------halt---------
 
-
-load 0 600
-load 1 600
-load 2 300
-load 3 300
-load 4 0
-load 5 0
-load 6 255
-load 7 1
+load 0 600 i
+load 1 600 i
+load 2 0 i
+load 3 0 i
+load 4 20 i
+load 5 20 i
+load 6 255 i
+load 7 0 i
+load 8 0 i
+load 9 2 i
 
 init 0 1
--------code------
-
--------code------
-jic 3 0 34 0
-jmp 28
+gmp 2 3
+div 4 9 10
+div 5 9 11
+sub 2 10 2
+sub 3 11 3
+mr 2 3 4 5 6 7 8
 loop
+jmp 32

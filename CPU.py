@@ -29,6 +29,8 @@ class computer:
 
                 if task == "stop plaseae i am going to die":
                     break  # Stop execution
+                else:
+                    task = int(task)
 
                 if isinstance(task, int) and task != j:  
                     j = task  # Jump to new instruction
@@ -37,6 +39,6 @@ class computer:
             else:
                 j += 1
 
-cpu = computer("cpu\\binary.txt")
+cpu = computer("binary.txt")
 cpu.spilt()
 cpu.procues()
